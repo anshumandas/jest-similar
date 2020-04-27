@@ -1,0 +1,27 @@
+{
+  "name": "jest-similar",
+  "version": "1.0.0",
+  "description": "this provides a matcher for recursive deep equality but ignoring order in arrays and object keys",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshumandas/jest-similar.git"
+  },
+  "keywords": [
+    "jest",
+    "extend",
+    "toBeSimilar"
+  ],
+  "author": "Anshuman Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anshumandas/jest-similar/issues"
+  },
+  "homepage": "https://github.com/anshumandas/jest-similar#readme"
+}
