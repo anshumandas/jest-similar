@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const Chalk = require('chalk');
 
 expect.extend({
   toBeSimilar(received, expected) {
@@ -19,7 +20,11 @@ expect.extend({
         expect(received).toEqual(expected);
       }
       return {
-          pass: true
+          pass: true,
+          message: () => ` expected is similar to received
+          Expected: ${Chalk.blue(expected)}
+          Received: ${Chalk.red(received)}
+          `
       };
     } catch(ex) {
       return {

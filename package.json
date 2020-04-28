@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/anshumandas/jest-similar/issues"
   },
-  "homepage": "https://github.com/anshumandas/jest-similar#readme"
+  "homepage": "https://github.com/anshumandas/jest-similar#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
