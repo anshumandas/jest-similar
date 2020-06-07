@@ -1,6 +1,6 @@
 {
   "name": "jest-similar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "this provides a matcher for recursive deep equality but ignoring order in arrays and object keys",
   "main": "index.js",
   "dependencies": {

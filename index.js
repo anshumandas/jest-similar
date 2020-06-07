@@ -40,14 +40,17 @@ expect.extend({
       return {
           pass: true,
           message: () => ` expected is similar to received
-          Expected: ${Chalk.blue(expected)}
-          Received: ${Chalk.red(received)}
+  ${Chalk.yellow("Expected:")} ${Chalk.green(JSON.stringify(expected))}
+  ${Chalk.yellow("Received:")} ${Chalk.red(JSON.stringify(received))}
           `
       };
     } catch(ex) {
       return {
           pass: false,
-          message: () => ex.message
+          message: () => ` expected is not similar to received
+  ${Chalk.yellow("Expected:")} ${Chalk.green(JSON.stringify(expected))}
+  ${Chalk.yellow("Received:")} ${Chalk.red(JSON.stringify(received))}
+          `
       };
     }
   }
