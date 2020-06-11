@@ -50,6 +50,7 @@ expect.extend({
           message: () => ` expected is not similar to received
   ${Chalk.yellow("Expected:")} ${Chalk.green(JSON.stringify(expected))}
   ${Chalk.yellow("Received:")} ${Chalk.red(JSON.stringify(received))}
+  ${ex.message}
           `
       };
     }
