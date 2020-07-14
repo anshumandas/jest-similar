@@ -72,3 +72,7 @@ For usage see test.js
 ## LICENSE
 
 [MIT](/LICENSE)
+
+
+## Todos
+- given string from files figure out common areas jumbled up

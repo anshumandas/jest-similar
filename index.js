@@ -15,6 +15,10 @@ function compare(a, b) {
   return 0;
 }
 
+function alterString(str) {
+  return str.toLowerCase().replace( /[\r\n ]+/gm, "" );
+}
+
 expect.extend({
   toBeSimilar(received, expected) {
     try {
@@ -34,6 +38,9 @@ expect.extend({
         for (var key in expected) {
           expect(received[key]).toBeSimilar(expected[key]);
         }
+      } else if(_.isString(expected)) {
+        //compare ignoring case and spaces
+        expect(alterString(received)).toEqual(alterString(expected));
       } else {
         expect(received).toEqual(expected);
       }
