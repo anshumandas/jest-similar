@@ -5,6 +5,7 @@ Even (jest-extended)[https://github.com/jest-community/jest-extended] did not ha
 
 ## Solution
 This simple jest extension to test deep equality while ignoring order of object properties and array elements
+This now also checks contained string similarity by ignoring case spaces and line breaks.
 
 ## Installation
 
