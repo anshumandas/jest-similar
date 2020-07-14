@@ -52,6 +52,18 @@ expect.extend({
           `
       };
     } catch(ex) {
+      if(_.isString(expected)) {
+        try {
+          //compare ignoring case and spaces
+          expect(received).toEqual(expected);
+        } catch(ex2) {
+          return {
+            pass: false,
+            message: () => ex2.message
+          };
+        }
+      }
+
       return {
           pass: false,
           message: () => ` expected is not similar to received
